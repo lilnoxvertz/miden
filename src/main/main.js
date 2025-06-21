@@ -9,11 +9,7 @@ async function startTask(acountId, path, recipients) {
         "consume"
     ]
 
-    let cycle = 0
-    const maxCycle = 5
-
-    while (cycle < maxCycle) {
-        cycle++
+    while (true) {
         const randomTask = tasks[Math.floor(Math.random() * tasks.length)]
         towns.warn(`${truncatedAddress} is working on ${randomTask} task`)
         try {
