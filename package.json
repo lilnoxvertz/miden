@@ -1,0 +1,21 @@
+{
+  "name": "miden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/main/main.js",
+    "create": "node ./src/main/create.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "x",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "chalk": "^4.1.2",
+    "js-sha3": "^0.9.3",
+    "moment-timezone": "^0.6.0"
+  }
+}
