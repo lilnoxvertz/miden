@@ -38,6 +38,9 @@ async function startTask(acountId, path, recipients) {
                     if (balance < parseInt(amount)) {
                         towns.warn(`${acountId} Balance is smaller than the amount to send. skipping..`)
                         break
+                    } else if (balance === undefined || balance === "" || balance === null) {
+                        towns.warn(`${acountId} Has no balance found. skipping..`)
+                        break
                     }
 
                     await Miden.send(acountId, target, amount, faucetAddress, type, path)
