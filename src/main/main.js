@@ -32,10 +32,10 @@ async function startTask(acountId, path, recipients) {
                     const balance = await Miden.getAccountBalance(acountId, path)
 
                     if (balance < parseInt(amount)) {
-                        towns.warn(`${acountId} Balance is smaller than the amount to send. skipping..`)
+                        towns.warn(`${truncatedAddress} Balance is smaller than the amount to send. skipping..`)
                         break
                     } else if (balance === undefined || balance === "" || balance === null) {
-                        towns.warn(`${acountId} Has no balance found. skipping..`)
+                        towns.warn(`${truncatedAddress} Has no balance found. skipping..`)
                         break
                     }
 
