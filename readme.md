@@ -10,6 +10,11 @@ after that, install all of the modules
     npm install
 ```
 
+and make sure that miden client is installed. if you haven't installed miden client, just type
+```bash
+    cargo install miden-cli
+```
+
 ## Notes
 
 This script will run forever till you stop it by yourself. if any of your address/account failed consuming notes, it's fine.
